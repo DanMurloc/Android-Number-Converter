@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/mynumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30dp"
+            >
+        </EditText>
+        <TextView
+            android:id="@+id/yournumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30dp">
+        </TextView>
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Конвертация"
+        android:textSize="30dp"
+        android:onClick="onClickButton">
+    </Button>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/dth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="decimal to hex"
+            android:textSize="30dp">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/hdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hex to decimal"
+            android:textSize="30dp"
+            android:onClick="onClicRadioHTD">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/dtb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="decimal to binar"
+            android:textSize="30dp">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/btd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="binar to decimal"
+            android:textSize="30dp"
+            android:onClick="onClicRadioDTB">
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>
